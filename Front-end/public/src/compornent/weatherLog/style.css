@@ -1,0 +1,21 @@
+.weather-aria {
+    margin: 0;
+    height: 120px;
+    width: auto;
+    overflow: hidden;
+    font-size: 16;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+    p{
+        margin: auto;
+    }
+}
