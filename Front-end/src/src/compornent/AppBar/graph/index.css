@@ -1,39 +1,7 @@
-:root {
-    --base-width: 100px;
-}
-
-.weather-bar {
-    width: 300px;
-    height: 10px;
+.graph-class {
+    height: 50px;
+    margin: auto;
     display: flex;
     justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.sunny {
-    /* width: calc(var(--base-width)); */
-    width: 400px;
-    height: 10px;
-    background-color: red;
-}
-
-.cloudy {
-    /* width: calc(var(--base-width)); */
-    width: 100px;
-    height: 10px;
-    background-color: gainsboro;
-}
-
-.rainny {
-    width: 300px;
-    height: 10px;
-    background-color: skyblue;
-}
-
-.lightning {
-    width: 300px;
-    height: 10px;
-    background-color: yellow;
+    align-items: center;
 }
