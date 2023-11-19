@@ -13,9 +13,9 @@ function App() {
       <Bar />
       <MyWeather />
       <WeatherLog />
-      <Fab size="large" color="secondary" aria-label="add">
+      {/* <Fab size="large" color="secondary" aria-label="add">
         <Add />
-      </Fab>
+      </Fab> */}
     </div>
   )
 }

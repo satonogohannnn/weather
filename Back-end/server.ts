@@ -5,11 +5,7 @@ const app: express.Express = express();
 
 const { Client } = require("pg");
 const client = new Client({
-  user: "postgres",
-  host: "127.0.0.1",
-  database: "myweather",
-  password: "bello2023",
-  port: 5432,
+  // my postgre account
 });
 
 client.connect();
