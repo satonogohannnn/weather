@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+}
+
+h3 {
+    margin: 20px;
+}
+
+.time {
+    font-size: small;
+    color: #6F6F6F;
+}

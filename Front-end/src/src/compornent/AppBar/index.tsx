@@ -27,14 +27,12 @@ function Bar() {
         <div className='header-img'>
           <img src={sunny}></img>
         </div>
-        <div className='weather-graph'>
           <Graph />
-        </div>
-        <div className='header-slider'>
+        {/* <div className='header-slider'>
           <p>日本</p>
           <p>全国</p>
           <p>東北</p>
-        </div>
+        </div> */}
     </header>
   )
 }

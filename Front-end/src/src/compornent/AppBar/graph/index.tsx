@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react"
-import ReactDOM from "react-dom"
+import React, { useRef, useEffect } from "react";
 import './index.css';
 
 type props = {
@@ -12,7 +11,7 @@ const maxWitdh: number = 300;
 const weatherlist: Array<props> = [
   {
     Name: 'sunny',
-    Count: 40,
+    Count: 30,
     Color: '#ff4500',
   },{
     Name: 'cloudy',
@@ -43,7 +42,6 @@ function fillGraph (ctx: any, max: number, min: number, color: string, value: nu
 
 function Graph() {
   const canvasRef = useRef(null);
-
   const getContext = (): CanvasRenderingContext2D => {
     const canvas: any = canvasRef.current;
 
