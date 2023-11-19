@@ -1,5 +1,5 @@
 import express from 'express';
-import getRecord from "./method/getRecotds";
+import setGetRecordRoute from "./public";
 
 const app: express.Express = express();
 
@@ -13,17 +13,12 @@ const client = new Client({
 });
 
 client.connect();
-client.query("SELECT * from weather_list", (err: any, res: any) => {
-  console.log(err, res);
-  client.end();
-});
 
-app.use(express.static("public.ts"));
+// app.use('/static', express.static("public.ts"));
+setGetRecordRoute(app);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.use("/getRecord", getRecord);
 
 const port = 8000;
 

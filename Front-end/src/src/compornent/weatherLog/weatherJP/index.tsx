@@ -66,19 +66,19 @@ const WeatherJP = () => {
 
     React.useEffect(() => {
 
-        // const fetchData = async () => {
-        //     try {
-        //         const res = await fetch('/get');
-        //         const json: React.SetStateAction<weather[] | null> = await res.json();
-        //         setWeathers(json);
-        //     } catch (e: unknown) {
-        //         if (e instanceof Error) {
-        //             console.error(e.message);
-        //         }
-        //     }
-        // };
+        const fetchData = async () => {
+            try {
+                const res = await fetch('/get');
+                const json: React.SetStateAction<weather[] | null> = await res.json();
+                setWeathers(json);
+            } catch (e: unknown) {
+                if (e instanceof Error) {
+                    console.error(e.message);
+                }
+            }
+        };
 
-        // fetchData();
+        fetchData();
 
     }, []);
 
